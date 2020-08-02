@@ -1,0 +1,9 @@
+package com.reload.restapi;
+
+import retrofit2.Call;
+import retrofit2.http.GET;
+
+public interface APIinterface {
+    @GET("posts/2")
+    public Call<Post> getPost();
+}
